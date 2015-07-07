@@ -8,3 +8,4 @@ a
 i check fetch function.
 add an end line at newBranch.
 add a line newBranch3
+this a branch line`
