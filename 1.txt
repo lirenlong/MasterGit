@@ -1,3 +1,4 @@
+will be reverted
 private
 
 adf
@@ -15,5 +16,8 @@ asd
 this is a company line
 
 asdf
+<<<<<<< HEAD
 zxc
 asdf
+=======
+>>>>>>> parent of 52fb6da... modify 1.txt again
