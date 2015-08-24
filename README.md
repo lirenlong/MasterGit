@@ -95,6 +95,7 @@ git reset --hard <commit_id>
 
 
 [1]:http://pcottle.github.io/learnGitBranching/ "null"
+[撤销、回滚提交]:http://gitbook.liuhui998.com/4_9.html
 
 
 
