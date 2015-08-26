@@ -98,7 +98,8 @@ git reset --hard <commit_id>
 * git branch -m devlop develop 修改名字
 
 ### [动画做题][1]积累
-* git rebase -i HEAD~4 --aboveAll 可以取过去的4次提交（不一定是当前分支上）的中的任意某几次，重新建立一串commit
+* git rebase -i HEAD~4 --aboveAll 可以取过去的4次提交（也可以不是当前分支上）的中的任意某几次，重新建立一串commit。可以修改本地的，没有提交到远端的commit内容
+* git commit --amend 可以修改commit注释
 
 
 
