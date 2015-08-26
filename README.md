@@ -97,6 +97,8 @@ git reset --hard <commit_id>
 * git remote prune origin / git fetch -p 可以清楚无效分支（无效分支是指fetch到本地，但是被其他管理者删除的远程分支）
 * git branch -m devlop develop 修改名字
 
+8.test
+
 ### [动画做题][1]积累
 * git rebase -i HEAD~4 --aboveAll 可以取过去的4次提交（也可以不是当前分支上）的中的任意某几次，重新建立一串commit。可以修改本地的，没有提交到远端的commit内容
 * git commit --amend 可以修改commit注释
