@@ -97,7 +97,7 @@ git reset --hard <commit_id>
 * git remote prune origin / git fetch -p 可以清楚无效分支（无效分支是指fetch到本地，但是被其他管理者删除的远程分支）
 * git branch -m devlop develop 修改名字
 
-8.test
+8.如果历史提交出现`Merge branch 'master' of https://github.com/rogerAce/MasterGit`，说明有人在本地对两个分流，但都属于master的分支，进行了合并。这时候有可能会出现两个一模一样的奇怪的提交（如0724cc2d0f6c175758e36245889a6d2e71c036a1...020dd1f57102220c0a0bb1669e6e957eb93115ce），但是git是认可的。
 
 ### [动画做题][1]积累
 * git rebase -i HEAD~4 --aboveAll 可以取过去的4次提交（也可以不是当前分支上）的中的任意某几次，重新建立一串commit。可以修改本地的，没有提交到远端的commit内容
