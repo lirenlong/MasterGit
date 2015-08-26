@@ -87,6 +87,7 @@ git reset --hard <commit_id>
 
 * git branch issue315
 * git co issue315
+ 6.
  
 [git fetch & pull](http://blog.csdn.net/liangxiaozhang/article/details/8281047)
 
