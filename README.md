@@ -70,6 +70,7 @@ git reset --hard <commit_id>
 * git log -p --stat 列出每次提交的代码变更
 * [使用图形化工具查阅提交历史](https://git-scm.com/book/zh/v1/Git-%E5%9F%BA%E7%A1%80-%E6%9F%A5%E7%9C%8B%E6%8F%90%E4%BA%A4%E5%8E%86%E5%8F%B2)
   - gitk命令：它是基于/usr/bin/wish的
+  - sourceTree
 
 ## 其他
 ### 平时积累
