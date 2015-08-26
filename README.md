@@ -87,9 +87,15 @@ git reset --hard <commit_id>
 
 * git branch issue315
 * git co issue315
- 6.
- 
-[git fetch & pull](http://blog.csdn.net/liangxiaozhang/article/details/8281047)
+
+6.[git fetch & pull](http://blog.csdn.net/liangxiaozhang/article/details/8281047)
+
+7.整理分支
+
+* git remote show origin 显示远程分支信息 还可以查看哪些本地分支是无效的，是没有更新到最新的
+* git branch -r 显示上次fetch后，目前本地保存的远程分支信息
+* git remote prune origin / git fetch -p 可以清楚无效分支（无效分支是指fetch到本地，但是被其他管理者删除的远程分支）
+* git branch -m devlop develop 修改名字
 
 ### [动画做题][1]积累
 * git rebase -i HEAD~4 --aboveAll 可以取过去的4次提交（不一定是当前分支上）的中的任意某几次，重新建立一串commit
