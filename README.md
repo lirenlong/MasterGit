@@ -71,6 +71,29 @@ git reset --hard <commit_id>
 * [使用图形化工具查阅提交历史](https://git-scm.com/book/zh/v1/Git-%E5%9F%BA%E7%A1%80-%E6%9F%A5%E7%9C%8B%E6%8F%90%E4%BA%A4%E5%8E%86%E5%8F%B2)
   - gitk命令：它是基于/usr/bin/wish的
   - sourceTree
+  
+## stash
+
+当我们在自己分支上工作的时，如果有临时bug类的急性修复事件，我们需要切到指定分支上修复。当我们co到目标分支时，有两个因素要注意：
+
+1. 本地有修改
+2. 本地有提交
+
+实践发现，当两者皆具备时，git会尝试checkout，当本地的变化会因为co而被修改，则co失败，提醒用户做保存。而当只占据一个因素的时候，是可以co成功，此时，修改会保留在working zone里，提交停留在原地，不会变化。
+
+因此我们需要对修改做保存，待bug修复完后，恢复。
+
+这时我们通常可以：
+
+* clone一份新的代码下来
+* git stash当前分支的本地修改，然后git checkout
+
+stash过程相当于为本地的修改，做一次提交（多次stash的话，则相当于线性多次提交），当pop时，则将对应的提交点，还原到本地修改空间。
+
+## cherry-pick
+
+当提交错了分支，我们可以记录一下已经提的commit ref，然后切到想要提交的分支下，使用`git cherry-pick [commit ref]`。它会将制定的commit复制一份，作为当前分支的提交，制定的commit不被变化。
+
 
 ## 其他
 ### 平时积累
